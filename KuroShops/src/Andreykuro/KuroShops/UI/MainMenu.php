@@ -12,6 +12,8 @@ class MainMenu {
                 0 => WoodsUI::open($player),
                 1 => CropsUI::open($player),
                 2 => FoodUI::open($player),
+                3 => MiscUI::open($player),
+                4 => GeneratorsUI::open($player),
                 default => null
             };
         });
@@ -20,6 +22,8 @@ class MainMenu {
         $form->addButton("§lWoods");
         $form->addButton("§lCrops");
         $form->addButton("§lFood");
+        $form->addButton("§lMisc");
+        $form->addButton("§lGenerators");
         $player->sendForm($form);
     }
 }
