@@ -1,0 +1,21 @@
+---
+name: KuroShops
+version: 0.0.1
+main: Andreykuro\KuroShops\Main
+api: 5.42.0
+depend:
+  - SimpleEconomy
+
+commands:
+  shop:
+    description: "Open the KuroShops menu"
+    usage: "/shop"
+    aliases:
+      - store
+    permission: kuroshops.shop
+
+permissions:
+  kuroshops.shop:
+    description: "Allows the player to use /shop"
+    default: true
+...
